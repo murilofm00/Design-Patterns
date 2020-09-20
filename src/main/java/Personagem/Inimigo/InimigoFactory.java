@@ -1,4 +1,4 @@
-package personagem.Inimigo;
+package Personagem.Inimigo;
 import Util.Random;
 
 public class InimigoFactory {
