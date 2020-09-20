@@ -1,10 +1,17 @@
 package Jogador;
-import Arma.Arma;
+import Arma.*;
+
 
 public class Jogador {
     private String nome;
-    private int vida;
+    private int vida = 100;
     private Arma arma;
+    
+    public Jogador(String nome, String arma) {
+        this.nome = nome;
+        this.arma = ArmaFactory.criaArma(arma);      
+
+    }
     
     public int atacar(){
         return arma.atacar();
