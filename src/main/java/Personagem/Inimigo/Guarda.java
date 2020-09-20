@@ -6,9 +6,9 @@ public class Guarda extends Inimigo {
 
     public Guarda() {
         setNome("Guarda");
-        setVida(200);
+        setVida(100);
         setArma(new Espada());
-        setArmadura(10);
+        setArmadura(8);
     }
 
     @Override

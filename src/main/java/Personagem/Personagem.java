@@ -49,4 +49,12 @@ public abstract class Personagem {
     }
 
     public abstract int receberAtaque(int danoRecebido);
+
+    public void verAtributos() {
+        System.out.println("--------------------------------------");
+        System.out.println("Nome = " + getNome());
+        System.out.println("Vida = " + getVida());
+        System.out.println("Arma = " + getArma().getNome());
+        System.out.println("--------------------------------------");
+    }
 }
