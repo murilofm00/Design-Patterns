@@ -5,5 +5,9 @@ public class ArcoFlecha implements Arma{
         System.out.println("Atacando com Arco e Flecha.");
         return 60;
     } 
+    @Override
+    public String getNome(){
+        return "ArcoFlecha";
+    }
     
 }

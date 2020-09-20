@@ -6,5 +6,9 @@ public class Espada implements Arma{
         
         return 10;
     }
+    @Override
+    public String getNome(){
+        return "espada";
+    }
     
 }

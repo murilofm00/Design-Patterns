@@ -10,7 +10,6 @@ public class Jogador {
     public Jogador(String nome, String arma) {
         this.nome = nome;
         this.arma = ArmaFactory.criaArma(arma);      
-
     }
     
     public int atacar(){
@@ -36,7 +35,12 @@ public class Jogador {
     public void setArma(Arma arma) {
         this.arma = arma;
     }
-    
+   
+    public void verAtributos(){
+        System.out.println("Nome = " +nome);
+        System.out.println("Vida = " +vida);
+        System.out.println("Arma = " +arma.getNome());
+    }
     
     
     
