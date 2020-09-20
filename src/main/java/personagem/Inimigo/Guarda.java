@@ -1,4 +1,4 @@
-package Inimigo;
+package personagem.Inimigo;
 
 import Arma.Espada;
 
