@@ -13,5 +13,7 @@ public class Goblin extends Inimigo {
     @Override
     protected void defender(int danoRecebido) {
         int danoNaoDefendido = danoRecebido - (getArmadura() / 100 );
+        printDefesa(danoRecebido, danoNaoDefendido);
+        receberDano(danoNaoDefendido);
     }
 }

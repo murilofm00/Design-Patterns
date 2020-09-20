@@ -64,4 +64,10 @@ public abstract class Inimigo {
     public int atacar() {
         return arma.atacar();
     }
+
+    public void printDefesa(int danoRecebido, int danoNaoDefendido) {
+        int defesa = danoRecebido - danoNaoDefendido;
+        System.out.println("O " + getNome() + " defendeu " + defesa + " de dano");
+        System.out.println("O " + getNome() + " recebeu " + danoRecebido + " de dano");
+    }
 }

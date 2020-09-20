@@ -13,11 +13,14 @@ public class Guarda extends Inimigo {
 
     @Override
     protected void defender(int danoRecebido) {
-        int danoNaoDefendido = danoRecebido - getArmadura();
-        System.out.println("O " + getNome() + " defendeu " + getArmadura() + " de dano");
-        if (danoNaoDefendido > 0) {
-            receberDano(danoNaoDefendido);
-            System.out.println("O " + getNome() + " recebeu " + getArmadura() + " de dano");
+        int danoNaoDefendido = 0;
+
+        if(danoRecebido > getArmadura()) {
+            danoNaoDefendido = danoRecebido - getArmadura();
         }
+
+        printDefesa(danoRecebido, danoNaoDefendido);
+
+        receberDano(danoNaoDefendido);
     }
 }
