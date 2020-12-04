@@ -7,6 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Carrinho carrinho = Carrinho.getInstancia();
 
+        VisorCaixa view = new VisorCaixa();
+        view.setVisible(true);
         Item i = new ItemSimples("Carne", (float) 19.99);
         System.out.println(i.getNome() +"," + i.getValor());
         Item o = new ItemSimples("Arroz", (float) 23.99);
@@ -22,5 +24,9 @@ public class Main {
         carrinho.addItem(o);
         carrinho.addItem(io);
         carrinho.gerarNota();
+
+        view.adicionarProduto(i.getNome());
+        view.adicionarProduto(o.getNome());
+        view.adicionarProduto(io.getNome());
     }
 }
